@@ -2,7 +2,7 @@
 
 A user-friendly desktop application for Windows to convert EML files to PDF, built with Electron.
 
-![App Screenshot](https://i.imgur.com/your-screenshot.png) <!-- Replace with a real screenshot URL later -->
+![App Screenshot](./assets/screenshot.png)
 
 ## Features
 
