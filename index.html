@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EML to PDF Converter</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div id="theme-switcher">
+            <select id="theme-select">
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <!-- Step 1: File Selection -->
+        <div id="step-1" class="step active">
+            <h1>Step 1: Select EML Files</h1>
+            <div class="content">
+                <button id="select-eml-btn" class="button-primary">Choose Files</button>
+                <p id="file-count">0 files selected</p>
+            </div>
+            <div class="navigation">
+                <button id="next-step-1" class="button-next" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Options -->
+        <div id="step-2" class="step">
+            <h1>Step 2: Set Options</h1>
+            <div class="content">
+                <button id="select-output-btn" class="button-secondary">Choose Output Folder</button>
+                <p id="output-dir-display">No folder selected</p>
+                <div class="options">
+                    <input type="checkbox" id="categorize-switch" name="categorize">
+                    <label for="categorize-switch">Categorize by Month (YYYY-MM)</label>
+                </div>
+            </div>
+            <div class="navigation">
+                <button id="prev-step-2" class="button-back">Back</button>
+                <button id="convert-btn" class="button-convert" disabled>Convert</button>
+            </div>
+        </div>
+
+        <!-- Step 3: Progress -->
+        <div id="step-3" class="step">
+            <h1>Step 3: Conversion</h1>
+            <div class="content">
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <p id="status"></p>
+                <div id="summary-log"></div>
+            </div>
+            <div class="navigation">
+                <button id="start-over-btn" class="button-primary" style="display: none;">Start Over</button>
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html> 

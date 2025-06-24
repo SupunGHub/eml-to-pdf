@@ -1,0 +1,21 @@
+{
+  "name": "eml-to-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.2"
+  },
+  "dependencies": {
+    "fontkit": "^2.0.4",
+    "mailparser": "^3.7.1",
+    "pdf-lib": "^1.17.1"
+  }
+}
